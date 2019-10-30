@@ -1,0 +1,62 @@
+oms: 1
+
+info:
+  version: 1.0.0
+  title: mailgun
+  description: Send an email using the mailgun API
+
+lifecycle:
+  startup:
+    command: ["node", "index.js"]
+
+health:
+  http:
+    path: /health
+    port: 5000
+
+actions:
+ send:
+    help: Send an email
+    arguments:
+      to:
+        type: string
+        in: requestBody
+        required: true
+      from:
+        type: string
+        in: requestBody
+        required: true
+      subject:
+        type: string
+        in: requestBody
+        required: true
+      text:
+        type: string
+        in: requestBody
+        required: true
+    http:
+      path: /send
+      method: post
+      port: 5000
+      contentType: application/json
+    output:
+      type: object
+      contentType: application/json
+      properties:
+        error:
+          type: any
+        body:
+          type: object
+          contentType: application/json
+          properties:
+            id:
+              type: string
+            message:
+              type: string
+
+
+environment:
+  API_KEY:
+    type: string
+  DOMAIN:
+    type: string
