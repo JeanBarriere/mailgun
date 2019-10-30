@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.3](https://github.com/JeanBarriere/mailgun/compare/v1.1.2...v1.1.3) (2019-10-30)
+
+
+### Bug Fixes
+
+* **mailgun:** fix mailgun import ([320b15f](https://github.com/JeanBarriere/mailgun/commit/320b15f))
+
+
+
 ## [1.1.2](https://github.com/JeanBarriere/mailgun/compare/v1.1.1...v1.1.2) (2019-10-30)
 
 
