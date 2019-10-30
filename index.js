@@ -8,7 +8,7 @@ app.get('/health', (req, res) => {
   res.send('OK')
 })
 
-app.post('/mailgun', bodyParser.json(), async (req, res) => {
+app.post('/send', bodyParser.json(), async (req, res) => {
   const {
     API_KEY: apiKey,
     DOMAIN: domain
