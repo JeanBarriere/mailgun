@@ -1,6 +1,6 @@
 {
   "name": "mailgun",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "mailgun-js as a service",
   "main": "index.js",
   "scripts": {
