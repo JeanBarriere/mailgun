@@ -41,13 +41,11 @@ actions:
       contentType: application/json
     output:
       type: object
-      contentType: application/json
       properties:
         error:
           type: any
         body:
           type: object
-          contentType: application/json
           properties:
             id:
               type: string
