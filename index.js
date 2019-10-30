@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const port = 5000
-const mailgun = require('mailgun-js')
+const Mailgun = require('mailgun-js')
 
 app.get('/health', (req, res) => {
   res.send('OK')
