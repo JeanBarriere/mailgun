@@ -32,8 +32,8 @@ app.post('/send', bodyParser.json(), async (req, res) => {
 
   mailgun.messages().send(mailData, (error, body) => {
     res.send({
-      error,
-      body
+      error: error || '',
+      body: body || ''
     })
   })
 })
