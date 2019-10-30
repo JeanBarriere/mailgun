@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.4](https://github.com/JeanBarriere/mailgun/compare/v1.1.3...v1.1.4) (2019-10-30)
+
+
+### Bug Fixes
+
+* **return-value:** always return both error and body ([c9a41bf](https://github.com/JeanBarriere/mailgun/commit/c9a41bf))
+* **return-value:** put proper value in return object ([911417e](https://github.com/JeanBarriere/mailgun/commit/911417e))
+
+
+
 ## [1.1.3](https://github.com/JeanBarriere/mailgun/compare/v1.1.2...v1.1.3) (2019-10-30)
 
 
